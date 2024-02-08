@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    font-family: 'Poppins', cursive;
+    position: relative;
+    background: url("img.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: darkcyan;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(219, 238, 238, 0.4);
+    z-index: -1;
+}
+.container{
+    border: 3px solid rgb(52, 52, 214);
+    background-color:none;
+    padding: 3rem;
+    margin: 2rem; 
+    border-radius: 2rem;
+    min-height: 45vh;
+    width: 40vh
+}
+form{
+    margin: 2rem 0 1rem 0;
+}
+form select,button,input{
+    width:  100%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+form input{
+    transition: box-shadow 0.3s ease;
+    opacity: 0.8;
+    border: 1.5px solid rgb(52, 52, 214);
+    font-size: 1.5rem;
+    height: 3rem;
+    padding-left: 0.75rem;
+}
+form input:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+.dropdown i{
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+.select-container img{
+    max-width: 6.5rem;
+    opacity:0.8 ;
+}
+.select-container{
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    width: 5rem;  
+}
+form select{
+    transition: box-shadow 0.3s ease;
+    opacity: 0.8;
+    border-radius:1rem;
+    border: 1.5px solid rgb(52, 52, 214);
+    font-size: 1rem;
+}
+form select:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.amount{
+    font-size: 1.5rem;
+}
+.msg{
+    opacity: 0.8;
+    font-size: 1.5rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    border: 1.5px solid rgb(52, 52, 214);
+    border-radius: 1rem;
+    background-color: white;
+}
+form button{
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease-in-out;
+    width: auto;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin:1rem auto;
+    background-color: salmon;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    cursor:  pointer;
+    opacity: 0.8;
+}
+form button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+
+
